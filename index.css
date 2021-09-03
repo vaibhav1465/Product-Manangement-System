@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: space-between;
 }
+.container>h1{
+    font-weight: bolder;
+    margin-bottom: 70px;
+}
 .form-container{
     display: flex;
     width: 80%;

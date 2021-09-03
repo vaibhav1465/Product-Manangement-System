@@ -56,4 +56,5 @@ display();
 }
 updateProduct=(index)=>{
     console.log("in update function")
+    document.getElementById("updateform").style.display="flex";
 }

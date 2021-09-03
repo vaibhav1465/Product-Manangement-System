@@ -10,6 +10,8 @@ products=[
         price:146684,
         quantity:48
     }];
+    
+    display();
 function add(){
     product={};
 
@@ -29,6 +31,7 @@ function display(){
     <th>Product Name</th>
     <th>Price</th>
     <th>Quantity</th>
+    <th>Operations</th>
 </tr>`;
     for(let i=0;i<products.length;i++){
         productString+=`
@@ -38,11 +41,19 @@ function display(){
          <td>${products[i].price}</td>
         <td>${products[i].quantity}</td>
         <td>
-            <button class="btn">Update</button>
-            <button class="btn">Delete</button>
+            <button class="btn" onclick="updateProduct(${i})">Update</button>
+            <button class="btn" onclick="deleteProduct(${i})">Delete</button>
         </td>
     </tr>
         `
     }
     document.getElementById("table").innerHTML=productString;
+}
+deleteProduct=(index)=>{
+    console.log("in func delete");
+products.splice(index,1);
+display();
+}
+updateProduct=(index)=>{
+    console.log("in update function")
 }

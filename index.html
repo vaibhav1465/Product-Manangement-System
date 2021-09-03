@@ -18,33 +18,15 @@
 
         </div>
         <table id="table">
-            <tr>
-                <th>#</th>
-                <th>Product Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Computer</td>
-                <td>12587</td>
-                <td>111</td>
-                <td>
-                    <button class="btn" >Update</button>
-                    <button class="btn">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Mouse</td>
-                <td>125</td>
-                <td>178</td>
-                <td>
-                    <button class="btn">Update</button>
-                    <button class="btn">Delete</button>
-                </td>
-            </tr>
+           
         </table>
+        <div class="form-container updateform" id="updateform">
+            <input type="text" placeholder="Enter Name" id="upd-name">
+            <input type="text" placeholder="Enter Price" id="upd-price">
+            <input type="text" placeholder="Enter Quantity" id="upd-quantity">
+            <button class="btn" onclick="updateInfo()">Update Product</button>
+
+        </div>
     </div>
     </div>
 

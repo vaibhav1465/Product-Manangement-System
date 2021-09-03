@@ -40,6 +40,7 @@
 }
 table{
     margin-top: 50px;
+    margin-bottom: 100px;
     width: 79%;
     border: 1px solid lightgray;
     border-collapse: collapse;
@@ -49,4 +50,7 @@ th,td{
 }
 table .btn{
     width: 30%;
+}
+.updateform{
+    display: none;
 }
